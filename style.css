@@ -1,0 +1,23 @@
+#carouselHome {
+    height: 100%;
+    width: 100%;
+}
+
+#label {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+#menu {
+    background-color: rgb(106, 211, 211);
+}
+
+#img_slide{
+    width: 80%;
+    height:850px;
+}
+
+#foto_carro{
+    width: 230px;
+    height: 200px;
+}
