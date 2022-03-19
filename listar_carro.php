@@ -30,8 +30,8 @@
 		<style>
 			#foto_carro
 			{
-				width: 100px;
-				height: 80px;
+				width: 80px;
+				height: 60px;
 			}
 		</style>
 
