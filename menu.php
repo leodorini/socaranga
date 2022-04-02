@@ -45,6 +45,9 @@
             <li class="nav-item">
                 <a href="sobre.php" class="nav-link">Sobre</a>
             </li>
+            <li class="nav-item">
+                <a href="login.php" class="nav-link">login</a>
+            </li>
         </ul>
         </div>
     </div>
