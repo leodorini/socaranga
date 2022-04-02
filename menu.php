@@ -10,7 +10,7 @@
 
 <div id="menu">
 <hr>
-<h1 align='center'>SóCaranga</h1>
+<h1 align='center'>Concessionária SóCaranga</h1>
 <br>
 <!--
 <p  align='center'>
