@@ -45,10 +45,10 @@
             <li class="nav-item">
                 <a href="sobre.php" class="nav-link">Sobre</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a href="sobre.php" class="nav-link">Login</a>
             </li>
-
+-->
         </ul>
         </div>
     </div>

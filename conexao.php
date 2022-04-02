@@ -7,7 +7,6 @@
 	//Admim: admin
 	//Senha: [(Sw|kBk18FykgrM
 
-	//@Kamirii teste
 
 		//LOCAL
 		$conn = new PDO('mysql:host=localhost;dbname=bdconce','root','');
