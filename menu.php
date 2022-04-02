@@ -31,7 +31,7 @@
                 <a href="index.php" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-                <a href="listar_carro.php" class="nav-link">Lista</a>
+                <a href="listar_carro.php" class="nav-link">Catálogo</a>
             </li>
             <li class="nav-item">
                 <a href="listar_cliente.php" class="nav-link">Clientes</a>
@@ -44,9 +44,6 @@
             </li>
             <li class="nav-item">
                 <a href="sobre.php" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a href="sobre.php" class="nav-link">Login</a>
             </li>
         </ul>
         </div>
