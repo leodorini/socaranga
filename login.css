@@ -19,19 +19,27 @@ body {
 
   font-family:sans-serif;
 
+ 
+
 }
 
 .card {
 
   background-color: white;
 
-  padding: 40px;
+  padding: 60px;
 
-  border-radius: 2px;
+  border-radius: 10px;
 
   width:280px;
 
 }
+
+
+ /*.card-userphoto{
+  padding: 20px;
+  width: 10px;
+ }*/
 
 .card-header {
 
@@ -95,7 +103,7 @@ body {
 
   outline: none;
 
-  color: #fff;
+  color: black;
 
 }
 

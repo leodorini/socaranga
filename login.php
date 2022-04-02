@@ -15,7 +15,13 @@
     <body>
         <div id="login">
 
+      
             <form class="card">
+
+            <!--<div class="card-userphoto">
+                <img src="" alt="some text" width=60 height=40>
+                </div> -->
+
                 <div class="card-header">
                     <h2>Login</h2>
                 </div>
@@ -35,7 +41,7 @@
                 <div class="card-footer">
                     <input type="submit" value="Login" class="submit">
                     <a href="#" class="recuperar_senha">Esqueceu a senha?</a> 
-                    <a href="#" class="registrologin">Não tem conta? Registre-se</a>
+                    <a href="#" class="registro_login">Não tem conta? Registre-se</a>
                 </div>
 
             </form>
