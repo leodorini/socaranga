@@ -31,7 +31,7 @@
                 <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="listar_carro.php" class="nav-link">Catálogo</a>
+                <a href="listar_carro.php" class="nav-link">Lista</a>
             </li>
             <li class="nav-item">
                 <a href="listar_cliente.php" class="nav-link">Clientes</a>
