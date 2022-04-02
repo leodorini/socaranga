@@ -31,14 +31,28 @@
 		$id_marca = $_POST['marca'];
 		$id_cor = $_POST['cor'];
 		$id_cat = $_POST['categoria'];
+		$id_conce = $_POST['concessionaria'];
 		
-		$sql= "INSERT INTO tb_carro(nome,ano,cambio,combustivel,valor,id_marca,id_cor,id_cat) 
-		VALUES (?,?,?,?,?,?,?,?)";
+		$sql= "INSERT INTO tb_carro(nome,ano,cambio,combustivel,valor,id_marca,id_cor,id_cat,id_conce) 
+		VALUES (?,?,?,?,?,?,?,?,?)";
 		include "conexao.php";
 		$carro = $conn -> prepare($sql);
-		$carro -> execute(array($nome,$ano,$cambio,$combustivel,$valor,$id_marca,$id_cor,$id_cat));
-		$conn=null;
-		
+		$carro -> execute(array($nome,$ano,$cambio,$combustivel,$valor,$id_marca,$id_cor,$id_cat,$id_conce));
+		$novo_nome_foto =$conn->lastInsertId();
+		$conn = null;
+
+
+		// Salvar foto nos arquivos
+		if(isset($_FILES['pic']))
+		{
+			$ext = strtolower(substr($_FILES['pic']['name'],-4)); // Pegar extensão da foto
+			$dir = './fotos/'; // Pasta com as fotos
+			$novo_nome_foto = $novo_nome_foto.$ext; // Nome novo da fota + extensão
+			move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$novo_nome_foto); // Upload do arquivo
+		}	
+
+
+		// Mensagem de sucesso
 		echo "
 			<script>
 				alert('O veículo foi cadastrado com sucesso!');
@@ -46,6 +60,7 @@
 			</script>
 		";
 	}
+
 ?>
 
 <!--HTML-->
@@ -62,7 +77,7 @@
 	<div class="container">
 		<h2>Cadastro de Veículo</h2>
 		
-		<form action='' method='POST' align='center'>
+		<form action='' method='POST' class="form-group" enctype="multipart/form-data">
 			Nome do veículo:
 			<input type='text' name='nome'>
 			<br>
@@ -127,8 +142,16 @@
 			</select>
 			<br>
 			<br>
+			Concessionária:
+			<select name="concessionaria">
+				<option value='1'>1 - Curitiba</option>;
+				<option value='2'>2 - Londrina</option>;
+				<option value='3'>3 - Cascavel</option>;
+			</select>
+			<br>
+			<br>
 			Anexar Foto: 
-			<input class="form-control form-control-sm" id="formFileSm" type="file" />
+			<input type="file" name="pic" accept="image/*"/>
 			<br>
 			<br>
 
