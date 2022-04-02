@@ -5,7 +5,7 @@
   $sensor = $conn -> prepare($sql);
   $sensor -> execute();
   $conn = null;
-
+// conexao
 ?> 
 <html lang="pt-br">
 <head>
