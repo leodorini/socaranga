@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a href="index.php" class="nav-link">Home</a>
+                <a href="index.php" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
                 <a href="listar_carro.php" class="nav-link">Catálogo</a>
