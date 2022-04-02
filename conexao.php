@@ -6,8 +6,8 @@
 	//Banco: dbconce
 	//Admim: admin
 	//Senha: [(Sw|kBk18FykgrM
-	
-	//@mayconzinho vamo testa
+
+	//@Kamirii teste
 
 		//LOCAL
 		$conn = new PDO('mysql:host=localhost;dbname=bdconce','root','');
