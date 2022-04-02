@@ -1,0 +1,8 @@
+[02/04/2022] - Fucionalidades atribuídas 
+	
+	- Cadastros contas GitHub;
+	- Versionamento do código e divisão de tarefa do projeto (GitHub - instalação, configuração, uso);
+	- Implementação da função de adicionar fotos no formulário de criação de novos cadastros de veículos;
+	- Retrabalho nos registros do bando de dados (imagens, IDs, etc);
+	- Criação do draft da página de login do sistema, visando preparo para futura implementação de divisão hierárquica de usuários.
+	
