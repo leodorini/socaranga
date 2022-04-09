@@ -39,11 +39,11 @@
             if( $_SESSION["usuario"][1]==1): ?>
             <li class="nav-item">
                 <a href="listar_cliente.php" class="nav-link">Clientes</a>
-                <?php endif; ?>
             </li>
 			<li class="nav-item">
                 <a href="temperatura.php" class="nav-link">Dados do sensor </a>
             </li>
+            <?php endif; ?>
             <li class="nav-item">
                 <a href="mapa.php" class="nav-link">Mapa</a>
             </li>

@@ -68,7 +68,11 @@
 				<th>Ano</th>
 				<th>Valor</th>
 				<th>Cor</th>
-				<th>OP</th>
+				<?php if( $_SESSION["usuario"][1]==1):
+				echo "<th>OP</th>";
+				endif;
+				?>
+				
 			<?php
 			foreach($carros AS $i){
 				$id = $i['id_carro'];
@@ -76,6 +80,7 @@
 				$ano = $i['ano'];
 				$valor = $i['valor'];
 				$cor = $i['cor'];
+				
 				
 				$excluir = "<a href='excluir.php?id=$id&nome=$nome'><input type='button' value='Excluir'></a>";
 				$editar = "<a href='editar.php?id_editar=$id'><input type='button' value='Editar'></a>";
@@ -87,9 +92,11 @@
 					<td>$nome</td>
 					<td>$ano</td>
 					<td align='right'>R$ $valor</td>
-					<td>$cor</td>
-					<td>$editar$excluir</td>
-				</tr>";
+					<td>$cor</td>";
+					if( $_SESSION["usuario"][1]==1):
+					echo"<td>$editar$excluir</td>";
+				 endif; 
+				echo "</tr>";
 			}
 			?>
 			</table>
