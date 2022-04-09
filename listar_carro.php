@@ -54,7 +54,7 @@
 					<h2>Catálogo</h2>
 				</div>
 				<div class="col" align='right'>
-					<a href="cadastrar.php">
+					<a href="cadastrar_carro.php">
 						<button type="button" class="btn btn-labeled btn-success">
                     	<span class="btn-label"><i class="fa fa-check"></i></span> Adicionar Veículo</button>
 					</a>
@@ -82,8 +82,8 @@
 				$cor = $i['cor'];
 				
 				
-				$excluir = "<a href='excluir.php?id=$id&nome=$nome'><input type='button' value='Excluir'></a>";
-				$editar = "<a href='editar.php?id_editar=$id'><input type='button' value='Editar'></a>";
+				$excluir = "<a href='excluir_carro.php?id=$id&nome=$nome'><input type='button' value='Excluir'></a>";
+				$editar = "<a href='editar_carro.php?id_editar=$id'><input type='button' value='Editar'></a>";
 				
 				echo"
 				<tr>
