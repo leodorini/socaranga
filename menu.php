@@ -1,3 +1,4 @@
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -33,8 +34,11 @@
             <li class="nav-item">
                 <a href="listar_carro.php" class="nav-link">Catálogo</a>
             </li>
+            <?php 
+            if( $_SESSION["usuario"][1]==1): ?>
             <li class="nav-item">
                 <a href="listar_cliente.php" class="nav-link">Clientes</a>
+                <?php endif; ?>
             </li>
 			<li class="nav-item">
                 <a href="temperatura.php" class="nav-link">Dados do sensor </a>
@@ -46,7 +50,10 @@
                 <a href="sobre.php" class="nav-link">Sobre</a>
             </li>
             <li class="nav-item">
-                <a href="login.php" class="nav-link">login</a>
+                <a href="index.html" class="nav-link">login</a>
+            </li>
+            <li class="nav-item">
+                <a href="logout.php" class="nav-link">logout</a>
             </li>
         </ul>
         </div>
