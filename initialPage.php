@@ -26,8 +26,9 @@
 </head>
 <body>
 <?php
- echo "seja bem vindo".$nome;
+ echo $nome;
 ?>
+
     <p align='center'><?php include 'menu.php'; ?></p>
         <div id="carouselHome" class="carousel slide" data-bs-ride="carousel" align='center'>
             <div class="carousel-inner">

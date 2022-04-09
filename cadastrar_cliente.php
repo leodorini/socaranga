@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <?php
+ session_start(); 
+
     if(isset($_POST['salvar'])){
         $nome_usuario = $_POST['nome_usuario'];
         $senha = MD5($_POST['senha']);

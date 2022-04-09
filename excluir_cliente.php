@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php
+session_start(); 
+
     $id = $_GET['id_excluir'];
     $nome_usuario = $_GET['nome_excluir'];
 

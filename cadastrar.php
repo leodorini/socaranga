@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+ session_start();
 	include "conexao.php";
 	//Pegar Registros da Tabela MARCA
 	$sql_marca = "SELECT * FROM tb_marca";

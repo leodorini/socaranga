@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php
+ session_start();
 		include 'conexao.php';
 		//Query tabela completa da ID
 		$id_get = $_GET['id_editar'];

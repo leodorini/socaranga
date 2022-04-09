@@ -1,5 +1,6 @@
 <!doctype html>
 <?php
+ session_start();
   include 'conexao.php';
   $sql = 'SELECT * FROM tb_temperatura';
   $sensor = $conn -> prepare($sql);

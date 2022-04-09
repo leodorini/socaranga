@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php
+ session_start();
     $id_get = $_GET['id_editar'];
     include 'conexao.php';
     $sql = "SELECT * FROM tb_usuario WHERE id_usuario = '$id_get'";

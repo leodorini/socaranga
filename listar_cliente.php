@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <?php
+session_start(); 
+
     include 'conexao.php';
     $sql = 'SELECT * FROM tb_usuario';
     $usuarios = $conn -> prepare($sql);

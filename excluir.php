@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php
+ session_start(); 
+
 	$id = $_GET['id'];
 	$nome = $_GET['nome'];
 	

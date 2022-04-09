@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-	
+
 	<?php
+	 session_start();
 		include "conexao.php";
 		
 
