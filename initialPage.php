@@ -26,8 +26,11 @@
 </head>
 <body>
 <?php
- echo $nome;
+ 
 ?>
+
+    <a  class = "nav-item" href="logout.php" class="nav-link">logout</a>
+
 
     <p align='center'><?php include 'menu.php'; ?></p>
         <div id="carouselHome" class="carousel slide" data-bs-ride="carousel" align='center'>

@@ -10,6 +10,8 @@
 		<title>Sobre - SóCaranga</title>
 	</head>
 	<body>
+	<a  class = "nav-item" href="logout.php" class="nav-link">logout</a>
+
 		<p align='center'><?php include "menu.php";?></p>
 
 		<div class="container">

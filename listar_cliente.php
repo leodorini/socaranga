@@ -22,9 +22,9 @@ session_start();
     <title>Clientes - SóCaranga</title>
 </head>
 <body>
-    <p align='center'><?php include "menu.php";?></p>
+<a  class = "nav-item" href="logout.php" class="nav-link">logout</a>
 
-    
+    <p align='center'><?php include "menu.php";?></p>    
 
     <div class="container">
         <div class="row">
