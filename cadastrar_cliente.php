@@ -22,7 +22,7 @@
         echo '
             <script>
                 alert("O usuário foi cadastrado com sucesso");
-                window.location.href="listar_cliente.php";
+                window.location.href="index.html";
             </script>
         ';
     }
@@ -40,7 +40,7 @@
     <title>Cadastrar Cliente - SóCaranga</title>
 </head>
 <body>
-    <p align='center'><?php include 'menu.php'; ?></p>
+    <!-- <p align='center'><#?php include 'menu.php'; ?></p> -->
     <div class="container">
         <h2>Cadastro de Cliente</h2>
         <br>

@@ -10,15 +10,14 @@
        
        $cont= $query->rowCount();
        echo $cont;
-        if($cont == 1){
-           
-
-           
+        if($cont == 1){           
             $_SESSION["usuario"] = array($user["nome"], $user["perfil"]);
-echo "logado ". $_SESSION["usuario"][0];
+            echo "logado ". $_SESSION["usuario"][0];
 
             echo "<script>window.location = 'initialPage.php'</script>";
-        }else{
+        }
+        else
+        {
             echo "erro". $_POST["usuario"];
             echo "<script>window.location = 'index.html'</script>";
         }
