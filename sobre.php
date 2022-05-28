@@ -25,6 +25,19 @@
 				<li>CSS</li>
 				<li>Navegação de Página</li>
 				<li>Carrosel com Imagens</li>
+				<li>Filtro visual de itens por região</li>
+				<li>Sistema de login</li>
+				<li>Criação de usuários</li>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<h2>Implementações futuras</h2>
+			<ul>
+				<li>Front-end página de cadastro</li>
+				<li>Página Recuperar senha</li>
+				<li>Página de compra</li>
+				<li>Filtro de inputs</li>
 			</ul>
 		</div>
 	</body>

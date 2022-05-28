@@ -15,13 +15,13 @@
 		//$conn = NULL;		
 
 		//Pegar Registros da Tabela MARCA
-		$sql_marca = "SELECT * FROM tb_marca";
+		$sql_marca = "SELECT * FROM tb_marca ORDER BY marca";
 		$marcas = $conn -> prepare($sql_marca);
 		$marcas -> execute();
 		//$conn = null;
 	
 		//Pegar Registros da Tabela COR
-		$sql_cor = "SELECT * FROM tb_cor";
+		$sql_cor = "SELECT * FROM tb_cor ORDER BY cor";
 		$cores = $conn -> prepare($sql_cor);
 		$cores -> execute();
 		//$conn = null;
@@ -43,6 +43,7 @@
             $id_marca = $i['id_marca'];
             $id_cor = $i['id_cor'];
             $id_cat = $i['id_cat'];
+			#$id_conce = $i['id_conce'];
 
 
 			$sel_id_cor = $i['id_cor'];
@@ -67,6 +68,7 @@
             $id_marca = $_POST['marca'];
             $id_cor = $_POST['cor'];
             $id_cat = $_POST['categoria'];
+#            $id_conce = $_POST['concessionaria'];
 			
 			$sql = "
 				UPDATE tb_carro
@@ -187,7 +189,15 @@
 		</select>
 		<br>
 		<br>
-
+<!--		Concessionária: 
+		<select name="concessionaria">
+				<option value='1'>1 - Curitiba</option>;
+				<option value='2'>2 - Londrina</option>;
+				<option value='3'>3 - Cascavel</option>;
+		</select>
+		<br>
+		<br>
+			-->
 		<input type='submit' name='alterar' value='Alterar'>
 		<input type='button' name='voltar' value='Voltar' onclick='window.history.back();'>
 	</form>

@@ -3,13 +3,13 @@
  session_start();
 	include "conexao.php";
 	//Pegar Registros da Tabela MARCA
-	$sql_marca = "SELECT * FROM tb_marca";
+	$sql_marca = "SELECT * FROM tb_marca ORDER BY marca";
 	$marcas = $conn -> prepare($sql_marca);
 	$marcas -> execute();
 	//$conn = null;
 
 	//Pegar Registros da Tabela COR
-	$sql_cor = "SELECT * FROM tb_cor";
+	$sql_cor = "SELECT * FROM tb_cor ORDER BY cor";
 	$cores = $conn -> prepare($sql_cor);
 	$cores -> execute();
 	//$conn = null;
