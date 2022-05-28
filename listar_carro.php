@@ -81,7 +81,7 @@
 				$nome = $i['nome'];
 				$ano = $i['ano'];
 				$valor = $i['valor'];
-				$cor = $i['cor'];
+				$cor = utf8_encode($i['cor']);
 				
 				
 				$excluir = "<a href='excluir_carro.php?id=$id&nome=$nome'><input type='button' value='Excluir'></a>";
