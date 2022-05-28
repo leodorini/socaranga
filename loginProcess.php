@@ -1,7 +1,7 @@
 <?php
     require("conexao.php");
  session_start();
- echo  $_POST["usuario"];
+ echo $_POST["usuario"];
  echo $_POST["password"];
     if(isset($_POST["usuario"]) && isset($_POST["password"]) && $conn != null){
         $query = $conn->prepare("SELECT * FROM tb_usuario WHERE nome_usuario = ? AND senha = ?");
@@ -19,6 +19,7 @@
         else
         {
             echo "erro". $_POST["usuario"];
+            echo "<script>window.alert('Usuário e/ou senha inválido')</script>";
             echo "<script>window.location = 'index.html'</script>";
         }
     }else{
