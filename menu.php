@@ -54,13 +54,7 @@
             </li>
             <li class="nav-tem">
                 <a href="logout.php" class="nav-link">Logout</a>
-            </li>
-          <?php  if( $_SESSION["usuario"][1]==1): ?>
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">login</a>
-            </li>
-            <?php endif; ?>
-            
+            </li>            
         </ul>
         </div>
     </div>
